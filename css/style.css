@@ -79,7 +79,15 @@ h1, h2, strong {
   justify-content: center;
 }
 
+.social-link {
+  color: #000;
+  font-size: 1.6rem;
+  margin: 0 .5em;
+}
 
+.social-link:hover {
+  color: #777;
+}
 
 
 

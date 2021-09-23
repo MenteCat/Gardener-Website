@@ -56,6 +56,33 @@ h1, h2, strong {
   grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
 }
 
+
+/* footer */
+
+.footer {
+  background: #ebebeb;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.footer-main,
+.social-list {
+  grid-column: 2 / -2;
+}
+
+.social-list {
+  order: -1;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
 /* ==== HERO AREA ==== */
 /* Setting up grid for small screens */
 
@@ -73,6 +100,7 @@ It places the content right in the middle of the page when shrinking */
 }
 
 /* ==== INFO SECTION ==== */
+
 .info {
   padding: 4em 0;
   text-align: center;

@@ -1,0 +1,29 @@
+/* the width including the padding and the border */
+* {box-sizing: border-box;}
+
+/* The first thing to write when dealing with CSS */
+body {
+  margin: 0️;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  line-height: 1.6;
+}
+
+h1, h2, strong {
+  font-weight: 700;
+}
+
+/* Setting up grid for small screens */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  background-image: url(./img/hero-bg.jpg);
+  color: black;
+}
+
+/* everything is a direct child of the hero.
+It places the content right in the middle of the page when shrinking */
+.hero > * {
+  grid-column: 2 / -2;
+}

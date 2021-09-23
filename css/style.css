@@ -18,8 +18,9 @@ h1, h2, strong {
 .hero {
   display: grid;
   grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
-  background-image: url(./img/hero-bg.jpg);
-  color: black;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  color: #fff;
 }
 
 /* everything is a direct child of the hero.

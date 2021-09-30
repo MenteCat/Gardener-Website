@@ -346,6 +346,8 @@ It places the content right in the middle of the page when shrinking */
 
 .main-image {
   margin-bottom: 1.5em;
+  /* negative values go up. Positive values go down. Middle 20px */
+  box-shadow: 5px 5px 0px black, 10px 10px #FFE600 ;
 }
 
 @media (min-width: 600px) {

@@ -28,7 +28,7 @@ h1, h2, strong {
 .page-title,
 .subtitle {
     grid-column: 2 / -2;
-    color: #000;
+    color: black;
     text-align: center;
 }
 
@@ -53,7 +53,26 @@ h1, h2, strong {
   color: #000;
   margin-top: 1.25em;
 }
-/* it will remove the margin top of the first child */
+
+/* the double column is a pseudo-element.
+It can be after or before our section.
+It's useful for not cluttering the html markup */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 10px 0 0 ;
+  background: #FFE600;
+}
+
+.section-title-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* it will remove the margin top of the first child.
+The single coulmn : is a pseudo-class  */
 .section-title:first-child {
   margin-top: 0;
 }
@@ -274,8 +293,6 @@ h1, h2, strong {
         justify-content: flex-end;
     }  
 }
-
-
 
 
 /* ==== HERO AREA ==== */

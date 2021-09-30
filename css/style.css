@@ -90,19 +90,25 @@ The single coulmn : is a pseudo-class  */
   margin-top: 0;
 }
 
-/* buttons */
+/* ==== BUTTONS ==== */
 
 .btn {
   padding: .5em 1.75em;
   font-weight: 700;
   margin-top: .5em;
   text-decoration: none;
+  border: 0;
 }
 
 .btn-primary {
   background: #FFE600;
   color: #000;
   justify-self: start;
+}
+
+.btn-form {
+  /* just because it's on the grid otherwise wouldn't work. Could put margin-left: auto; instead  */
+  justify-self: end;
 }
 
 /* ==== GENERAL LAYOUT ==== */
@@ -388,4 +394,31 @@ It places the content right in the middle of the page when shrinking */
   .main-text {
       grid-column: 3 / span 2;
   }
+
+  .secondary-text {
+    order: 2;
+  }
+
+}
+
+/* ==== FORM ==== */
+
+.contact-form {
+  display: grid;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: .75em;
+  padding: .4em;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
 }
